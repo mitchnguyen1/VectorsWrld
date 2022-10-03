@@ -1,0 +1,30 @@
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  body {
+    overflow: hidden;
+  }
+  
+  .text-white {
+    border: medium solid white;
+    border-radius: 5px;
+    font-size: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: silkscreen; 
+    margin-top: -400px ;
+  }
+
+  @font-face {
+    font-family: 'silkscreen';
+    src: url(fonts/Silkscreen-Bold.ttf) format('truetype');
+    src: url(fonts/Silkscreen-Regular.ttf) format('truetype');
+
+  }
+
+.nav-item {
+    font-size: 24px !important;
+}
