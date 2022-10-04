@@ -1,0 +1,31 @@
+ body {
+    overflow: hidden;
+  }
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+
+  
+  .text-white {
+    display: inline-flex;
+    border: medium solid white;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: silkscreen !important; 
+    margin-top: -900px ;
+  }
+
+.enter {
+    border: medium solid white;
+    border-radius: 5px;
+    font-size: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: silkscreen !important; 
+    margin-top: 5px ;
+}
+
