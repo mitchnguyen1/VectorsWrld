@@ -1,31 +1,40 @@
- body {
-    overflow: hidden;
-  }
-
-.bg-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: block;
-  }
-
-  
-  .text-white {
-    display: inline-flex;
-    border: medium solid white;
-    border-radius: 5px;
-    font-size: 50px;
-    font-family: silkscreen !important; 
-    margin-top: -900px ;
-  }
-
-.enter {
-    border: medium solid white;
-    border-radius: 5px;
-    font-size: 50px;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-family: silkscreen !important; 
-    margin-top: 5px ;
+body {
+  overflow: hidden;
 }
 
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  flex-direction: column;
+}
+
+  
+.text-white {
+  border: medium solid white;
+  border-radius: 5px;
+  font-size: 3vw;  /* vh is view-width so it can set text size based on height of screen */
+  font-family: silkscreen !important;
+  position: absolute;
+  top: 33%; /*This sets it 33% from top*/
+  left: 50%; /*left, margin-right, and transform will center it horizontally*/
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.enter {
+  border: medium solid white;
+  border-radius: 5px;
+  font-size: 3vw;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: silkscreen !important;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
