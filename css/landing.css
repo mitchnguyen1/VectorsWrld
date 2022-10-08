@@ -2,6 +2,10 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 .bg-image {
   background-repeat: no-repeat;
   background-position: center;
@@ -10,32 +14,52 @@ body {
   flex-direction: column;
 }
 
+.containter {
+  display: flex;
+  
+}
+
+.row {
+  justify-content: center;
+}
   
 .text-white {
-  border: medium solid white;
-  border-radius: 5px;
-  font-size: 3vw;  /* vh is view-width so it can set text size based on height of screen */
+  border: 0.159vw solid white;
+  border-radius: 20px;
+  font-size: 2.56vw;  /* vh is view-width so it can set text size based on height of screen */
   font-family: silkscreen !important;
-  position: absolute;
-  top: 33%; /*This sets it 33% from top*/
-  left: 50%; /*left, margin-right, and transform will center it horizontally*/
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-bottom: 25%;
+  margin-top: -15%;
+  /* position: absolute; */
+  /* top: 33%;     This sets it 33% from top */
+  /* left: 50%;      left, margin-right, and transform will center it horizontally */
+  /* margin-right: -50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .enter {
-  border: medium solid white;
-  border-radius: 5px;
-  color: white;
-  font-size: 3vw;
-  padding-right: 20px;
-  padding-left: 20px;
+  border: 0.159vw solid white;
+  border-radius: 20px;
+  color: white !important;
+  font-size: 2.56vw;
   font-family: silkscreen !important;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 50px;
+  transition: all 150ms linear 500ms;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  /* position: absolute; */
+  /* top: 55%; */
+  /* left: 50%; */
+  /* margin-right: -90%; */
+  /* transform: translate(-50%, -50%); */
 }
+
+.enter:hover {
+  background-color: rgba(238, 238, 238, 0.568);
+  cursor: pointer;
+}
+
