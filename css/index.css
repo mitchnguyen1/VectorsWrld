@@ -46,6 +46,7 @@ a:hover {
   font-family: silkscreen !important;
   text-align: center;
   margin-top: 50px;
+  padding-bottom: 0.55%;
   transition: all 150ms linear 500ms;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
