@@ -1,5 +1,6 @@
 body {
   overflow: hidden;
+  background-color: black;
 }
 
 a:hover {
@@ -48,10 +49,10 @@ a:hover {
   margin-top: 50px;
   padding-bottom: 0.55%;
   transition: all 150ms linear 500ms;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
   /* position: absolute; */
   /* top: 55%; */
   /* left: 50%; */
