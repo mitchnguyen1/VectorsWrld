@@ -1,10 +1,42 @@
-
-.carousel {
-    height: 1960px;
+html {
+    background-color: black !important;
+    overflow: hidden;
+  }
+  
+@font-face {
+    font-family: 'PASTOROF';
+    src: url(../fonts/Pastor\ of\ Muppets.TTF) format('truetype');
 }
 
-.carousel-item {
-    background-position: center;
+@font-face {
+    font-family: 'reverse6';
+    src: url(../fonts/reverse6.otf) format('opentype');
+}
+
+.bg-image {
+    background-color: black !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    flex-direction: column;
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 50%;
+}
+
+p {
+    color: white;
+    font-size: 10vw;
+    font-family: 'reverse6';
+}
+
+.reggie {
+    font-family: 'PASTOROF' !important;
 }
