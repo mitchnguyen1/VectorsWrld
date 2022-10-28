@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(25, 67, 105)!important;
 }
 
 a:hover {
@@ -32,6 +32,7 @@ a:hover {
   text-align: center;
   margin-bottom: 25%;
   margin-top: -15%;
+  white-space: nowrap;
   /* position: absolute; */
   /* top: 33%;     This sets it 33% from top */
   /* left: 50%;      left, margin-right, and transform will center it horizontally */
@@ -65,3 +66,28 @@ a:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 480px) { /*iphones */
+  .text-white{
+    font-size: larger;
+    margin-top: -90px;
+  }
+  .enter{
+    font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 480px) { /*iphones max */
+  .text-white{
+    font-size: 23px;
+    margin-top: -90px;
+  }
+  .enter{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 5120px) and (min-width: 2880px) { /*5k display*/
+  .text-white{
+    margin-bottom: 50% ;
+  }
+}
