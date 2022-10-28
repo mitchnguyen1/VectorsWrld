@@ -66,9 +66,9 @@ a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) { /*iphones */
+@media only screen and (max-width: 380px) { /*iphones */
   .text-white{
-    font-size: larger;
+    font-size: large !important;
     margin-top: -90px;
   }
   .enter{
