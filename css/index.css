@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(25, 67, 105)!important;
 }
 
 a:hover {
@@ -73,6 +73,16 @@ a:hover {
   }
   .enter{
     font-size: larger;
+  }
+}
+
+@media only screen and (max-width: 480px) { /*iphones max */
+  .text-white{
+    font-size: 23px;
+    margin-top: -90px;
+  }
+  .enter{
+    font-size: 23px;
   }
 }
 
