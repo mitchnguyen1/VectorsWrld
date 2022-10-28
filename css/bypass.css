@@ -49,7 +49,7 @@ p {
 
 .container a:hover {
     color: red;
-    transition: all 750ms linear 500ms;
+    transition: all 750ms ease-in-out 250ms;
   }
 
 .about {

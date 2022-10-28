@@ -32,6 +32,7 @@ a:hover {
   text-align: center;
   margin-bottom: 25%;
   margin-top: -15%;
+  white-space: nowrap;
   /* position: absolute; */
   /* top: 33%;     This sets it 33% from top */
   /* left: 50%;      left, margin-right, and transform will center it horizontally */
