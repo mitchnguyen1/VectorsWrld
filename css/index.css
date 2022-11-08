@@ -27,11 +27,11 @@ a:hover {
 .text-white {
   border: 0.159vw solid white;
   border-radius: 20px;
-  /* font-size: 2.56vw;  vh is view-width so it can set text size based on height of screen */
+  font-size: 4rem;
   font-family: silkscreen !important;
   text-align: center;
-  /* margin-bottom: 25%;
-  margin-top: -15%; */
+  margin-bottom: 25%;
+  margin-top: -15%;
   white-space: nowrap;
   /* position: absolute; */
   /* top: 33%;     This sets it 33% from top */
@@ -47,8 +47,8 @@ a:hover {
   font-size: 2.56vw;
   font-family: silkscreen !important;
   text-align: center;
-  /* margin-top: 50px;
-  padding-bottom: 0.55%; */
+  margin-top: 1rem;
+  margin-bottom: 4rem;
   transition: all 150ms linear 500ms;
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
@@ -66,7 +66,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 350px) { /*iphone 5/SE*/
+@media only screen and (min-width: 320px) and (max-width: 375px) { /*iphone 5/SE*/
   .enter {
     padding-left: .3rem;
     padding-right: .3rem;
@@ -189,7 +189,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 5140px) and (min-width: 5110px) { /*4k display*/
+@media only screen and (min-width: 5000px) { /*4k display*/
   .text-white{
     font-size: 6rem !important;
     margin-bottom: 14rem;
@@ -204,5 +204,6 @@ a:hover {
     margin-top: 8rem;
     margin-bottom: 8rem;
     padding-bottom: .5rem;
+    color: aqua !important;
   }
 }
