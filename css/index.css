@@ -15,8 +15,8 @@ a:hover {
   flex-direction: column;
 }
 
-.containter {
-  display: flex;
+.container {
+  display: block;
   
 }
 
@@ -27,11 +27,11 @@ a:hover {
 .text-white {
   border: 0.159vw solid white;
   border-radius: 20px;
-  font-size: 2.56vw;  /* vh is view-width so it can set text size based on height of screen */
+  /* font-size: 2.56vw;  vh is view-width so it can set text size based on height of screen */
   font-family: silkscreen !important;
   text-align: center;
-  margin-bottom: 25%;
-  margin-top: -15%;
+  /* margin-bottom: 25%;
+  margin-top: -15%; */
   white-space: nowrap;
   /* position: absolute; */
   /* top: 33%;     This sets it 33% from top */
@@ -47,8 +47,8 @@ a:hover {
   font-size: 2.56vw;
   font-family: silkscreen !important;
   text-align: center;
-  margin-top: 50px;
-  padding-bottom: 0.55%;
+  /* margin-top: 50px;
+  padding-bottom: 0.55%; */
   transition: all 150ms linear 500ms;
   -webkit-transition: background-color 1s ease-out;
   -moz-transition: background-color 1s ease-out;
@@ -66,28 +66,143 @@ a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 380px) { /*iphones */
-  .text-white{
+@media only screen and (min-width: 320px) and (max-width: 350px) { /*iphone 5/SE*/
+  .enter {
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
     font-size: large !important;
-    margin-top: -90px;
+  }
+  .text-white {
+    padding-left: .3rem;
+    padding-right: .3rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    font-size: 1.1rem !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { /*for iphone 5 landscape*/
+  .text-white {
+    padding-left: .3rem;
+    padding-right: .3rem;
+    font-size: 1rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem !important;
+  }
+  .enter{
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 430px) { /*Iphone 6/7/8 and X */
+  .text-white{
+    font-size: 1.3rem !important;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
   }
   .enter{
     font-size: larger;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 }
 
-@media only screen and (max-width: 480px) { /*iphones max */
+@media only screen and (min-width: 660px) and (max-width: 926px) {/*for iphone 6-X landscape and tablets*/
   .text-white{
-    font-size: 23px;
-    margin-top: -90px;
+    font-size: 1.3rem !important;
+    margin-bottom: 8rem;
+    margin-top: -2rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
   }
   .enter{
-    font-size: 23px;
+    font-size: larger;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 }
 
-@media only screen and (max-width: 5120px) and (min-width: 2880px) { /*5k display*/
+
+@media only screen and (max-width: 1920px) and (min-width: 1280px) { /*Generic desktop*/
   .text-white{
-    margin-bottom: 50% ;
+    font-size: 3rem !important;
+    margin-bottom: 8rem;
+    margin-top: -2rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+  .enter{
+    font-size: 3rem !important;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 3075px) and (min-width: 3000px) { /*macbook pro 16inch*/
+  .text-white{
+    font-size: 6rem !important;
+    margin-bottom: 10rem;
+    margin-top: -4rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+  .enter{
+    font-size: 6rem !important;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 3890px) and (min-width: 3840px) { /*4k display*/
+  .text-white{
+    font-size: 6rem !important;
+    margin-bottom: 12rem;
+    margin-top: -6rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+  .enter{
+    font-size: 6rem !important;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 5140px) and (min-width: 5110px) { /*4k display*/
+  .text-white{
+    font-size: 6rem !important;
+    margin-bottom: 14rem;
+    margin-top: -10rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+  .enter{
+    font-size: 6rem !important;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding-bottom: .5rem;
   }
 }
