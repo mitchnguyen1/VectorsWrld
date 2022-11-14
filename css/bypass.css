@@ -1,99 +1,71 @@
 html {
+    overflow: hidden; 
+    height: 100%;
+}
+
+body {
     background-color: black !important;
-    overflow: hidden;
-  }
-  
+    min-height: 100%;
+}
+
 @font-face {
     font-family: 'PASTOROF';
     src: url(../fonts/Pastor\ of\ Muppets.TTF) format('truetype');
 }
 
 @font-face {
-    font-family: 'reverse6';
-    src: url(../fonts/reverse6.otf) format('opentype');
+    font-family: 'POM';
+    src: url(../fonts/POM.otf) format('opentype');
+}
+    
+.parent {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.bg { 
+    grid-area: 1 / 1 / 5 / 12;  
+    background: url(../images/bypass4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110vh;
+    background-position: top;
+    background-color: black;
 }
 
-.bg-image {
-    background-color: black !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: block;
-    flex-direction: column;
-  }
-
+.div2 { 
+    grid-area: 3 / 5 / 4 / 8;
+    border: 2px solid white;
+}
+.div3 { 
+    grid-area: 3 / 9 / 4 / 11;
+    border: 2px solid rgb(174, 9, 9);
+}
+.div4 { 
+   grid-area: 3 / 2 / 4 / 4;
+    border: 2px solid rgb(12, 87, 207);
+}
 
 p {
     color: white;
     font-size: 10vw;
-    font-family: 'reverse6';
-    margin-left: 10%; 
-    margin-right: 10%;
+    font-family: 'POM';
 }
 
-.reggie {
-    font-family: 'PASTOROF' !important;
+.parent a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50%;
-}
-
-.container a {
-        color: #FFFFFF;
-        text-decoration: none;
-}
-
-.container a:hover {
+.parent a:hover {
     color: red;
     transition: all 750ms ease-in-out 250ms;
-  }
-
-.about {
-    margin-bottom: 5%;
-    margin-left: 15%; 
-    margin-right: 10%;
 }
 
-.adjust {
-    margin-left: 10%; 
-    margin-right: 10%;
+.media{
+    text-align: center;
 }
 
-
-@media only screen and (max-width: 480px) { /* for phones */
-   .container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 650px;
-    align-items: center;
-   }
-
-   p {
-    font-size: 18vw;
-   }
-}
-
-@media only screen and (max-width: 1324px) and (min-width: 768px) { /*for ipads landscape*/
-    .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 60% !important;
-    }
-    .about {
-        margin-bottom: 3.5%;
-        margin-left: 20%;
-    }
-    .friends {
-        margin-left: 5%; 
-        margin-right: 20%;
-    }
-    .media {
-        margin-left: 5%;
-        margin-right: 10%;
-    }
-} 
