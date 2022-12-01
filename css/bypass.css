@@ -38,15 +38,14 @@ body {
 
 .div2 { 
     grid-area: 3 / 5 / 4 / 8;
-    border: 2px solid white;
 }
 .div3 { 
     grid-area: 3 / 9 / 4 / 11;
-    border: 2px solid rgb(174, 9, 9);
+
 }
 .div4 { 
    grid-area: 3 / 2 / 4 / 4;
-    border: 2px solid rgb(12, 87, 207);
+
 }
 
 p {

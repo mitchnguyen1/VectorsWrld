@@ -4,32 +4,35 @@ body {
   }
   
 @font-face {
-    font-family: 'PASTOROF';
-    src: url(../fonts/Pastor\ of\ Muppets.TTF) format('truetype');
-}
-
-@font-face {
-    font-family: 'reverse6';
-    src: url(../fonts/reverse6.otf) format('opentype');
+    font-family: 'POM';
+    src: url(../fonts/POM.otf) format('opentype');
 }
 
 .nav-item{
-    font-size: 250%;
-    color: purple !important;
+    font-size: 6rem;
+    color: white !important;
+    font-family: "POM";
+    text-decoration: none;
   }
 
-.reggie {
-    font-family: 'PASTOROF' !important;
+.nav-item{
+    padding-left: 1rem;;
+    padding-right: 1rem;;
+  }
+
+  ul.nav a:hover { 
+    color: rgb(255, 0, 0) !important;
+    transition: all 300ms ease-in-out 200ms; 
+  }
+
+#friends {
+  margin-top: -0.01rem;
 }
 
-.nav-link {
-    font-family: 'reverse6';
+#about{
+  margin-left: 1rem;
 }
 
-.about {
-    margin-top: -5%; 
-    margin-right: 10%;
-}
 
   h1{ 
     color: white;

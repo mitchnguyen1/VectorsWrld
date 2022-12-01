@@ -8,24 +8,100 @@
     <title>Vector's World</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/media.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-item" href='media.html'>Medi¼</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item" id="about" href='about.html'>AbouÏ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item" id= "friends" href='about.html'>FriendÕ</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
     <header>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link about" href="about.html"><span class="reggie">A</span>bouT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="media.html">MediA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="friends.html">FriendS</a>
-            </li>
-          </ul>
+      <h1 id="heading" class="heading">Welcome To Cuteness Overload</h1>
     </header>
-    <h1>media</h1>
+
+    <div class="row">
+    <div class="card col-lg-4 col-md-12 mb-8 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+    </div>
+    <div class="card col-lg-4 col-md-12 mb-8 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+    </div>
+    <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+    </div>
+    <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+    </div>
+    <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+    </div>
+    <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+    </div>
+    </div>
+    <div class="row">
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+      </div>
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+      </div>
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+      </div>
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+      </div>
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" >
+      </div>
+      <div class="card col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img class="card-img"  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"  >
+      </div>
+      </div>
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+  var i = 0;
+  function change() {
+  var doc = document.getElementById("heading");
+  var colorPicker = ['#FEFCF3','#FBFACD',"#7F669D",'#F7A4A4','#FEBE8C',"#BCE29E",'#B1B2FF','#D0B8A8',"#A7D2CB",'#ECC5FB','#BA94D1',"#FFF5E4",'#CDF0EA','#F9F9F9',"#F675A8",'#AF7AB3','#E4D192',"#AF7AB3",'#6E85B7','#FFB3B3',"#CDF0EA",'#F6C6EA','#F4BFBF',"#D18CE0",'#FFF89A','#FF8AAE',"#F3C5C5",'#E7FBBE','#6867AC',"#D3DEDC",'#B983FF','#99FEFF'];
+  doc.style.color = colorPicker[i];
+  i = (i + 1) % colorPicker.length;
+  }
+  setInterval(change, 350);
+</script>
+<script>
+  let toggleButton = document.getElementsByClassName('toggle-button')[0];
+  let navBarLinks = document.getElementsByClassName('navbar-links')[0];
+  let head = document.getElementsByClassName("heading")[0];
+  toggleButton.addEventListener("click", ()=>{
+    navBarLinks.classList.toggle('active')
+    head.classList.toggle('active')
+  })
+</script>
 </body>
 </html>

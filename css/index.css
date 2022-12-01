@@ -33,11 +33,6 @@ a:hover {
   margin-bottom: 25%;
   margin-top: -15%;
   white-space: nowrap;
-  /* position: absolute; */
-  /* top: 33%;     This sets it 33% from top */
-  /* left: 50%;      left, margin-right, and transform will center it horizontally */
-  /* margin-right: -50%; */
-  /* transform: translate(-50%, -50%); */
 }
 
 .enter {
@@ -54,11 +49,6 @@ a:hover {
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
-  /* position: absolute; */
-  /* top: 55%; */
-  /* left: 50%; */
-  /* margin-right: -90%; */
-  /* transform: translate(-50%, -50%); */
 }
 
 .enter:hover {
