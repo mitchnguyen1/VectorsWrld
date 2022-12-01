@@ -99,7 +99,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 370px) and (max-width: 375px){
+@media only screen and (min-width: 323px) and (max-width: 375px){
     .parent {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -130,7 +130,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 3250px) and (max-width: 375px) and (min-height:800px)and (max-height:815px){
+@media only screen and (min-width: 325px) and (max-width: 375px) and (min-height:800px)and (max-height:815px){
 
     .media {
         font-size: 6rem !important;
