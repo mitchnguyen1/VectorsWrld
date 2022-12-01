@@ -20,7 +20,7 @@ html,body {
 .nav-item{
     font-size: 6rem;
     color: white !important;
-    font-family: "POM";
+    font-family: "POM" !important;
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
