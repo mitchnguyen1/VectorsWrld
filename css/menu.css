@@ -1,0 +1,51 @@
+html {
+    overflow: hidden; 
+    height: 100%;
+}
+
+body {
+    background-color: black !important;
+    
+}
+
+main{
+    background: url(../images/bypass4.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 90vh;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'PASTOROF';
+    src: url(../fonts/Pastor\ of\ Muppets.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'POM';
+    src: url(../fonts/POM.otf) format('opentype');
+}
+
+p {
+    color: white;
+    font-size: 10vw;
+    font-family: 'POM';
+}
+
+#link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: red;
+    transition: all 750ms ease-in-out 250ms;
+}
+
+
+ .row{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100vh;
+  }
