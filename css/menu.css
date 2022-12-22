@@ -1,18 +1,20 @@
 html {
     overflow: hidden; 
     height: 100%;
+    background-color: black !important;
 }
 
-body {
+body{
     background-color: black !important;
     
 }
 
 main{
+    background-color: black !important;
     background: url(../images/bypass4.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 90vh;
+    background-size: 100vh;
     height: 100%;
 }
 
@@ -49,3 +51,92 @@ p {
     justify-content: space-between;
     height: 100vh;
   }
+
+@media only screen and (max-width: 660px) {
+p{
+    font-size: 5rem;
+}
+main{
+    background-size: 80vh;
+}
+
+.parent {
+    position: relative;
+}
+.parent .row {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media .about .friends{
+    font-size: 5rem;
+}
+.div1{
+    margin-top: 13rem;
+    margin-bottom: -8rem;
+}
+
+.div2{
+    margin-top: -2rem;
+    margin-bottom: -4rem;
+}
+.div3{
+    margin-top: -8rem;
+    margin-bottom: -10rem;
+}
+}
+
+@media (min-width: 390px) and (max-width: 660px) {
+    .div1 p, .div2 p, .div3 p{
+        font-size: 7rem;
+    }
+    .div1{
+        margin-top: 20rem;
+        margin-bottom: -10rem;
+    }
+    
+    .div2{
+        margin-top: -6rem;
+        margin-bottom: -10rem;
+    }
+    .div3{
+        margin-top: -10rem;
+        margin-bottom: -8rem;
+    }
+}
+
+@media only screen and (max-width: 770px) and (min-width:760px){
+    main{
+        background-size: 80vh;
+    }
+    .div1 p, .div2 p, .div3 p {
+        font-size: 8rem;
+    }
+    .parent .row {
+        position: absolute;
+        bottom: 0;
+        left: 53%;
+        top: 40%;
+        transform: translate(-50%, 0);
+        display:block;
+        justify-content: center;
+        align-items: center;
+    }
+    .div1{
+        margin-top: 4rem;
+        margin-bottom: -3rem;
+    }
+    
+    .div2{
+        margin-top: 2rem;
+        margin-bottom: -4rem;
+    }
+    .div3{
+        margin-top: -4rem;
+        margin-bottom: 5rem;
+    }
+}

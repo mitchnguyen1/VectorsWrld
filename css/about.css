@@ -1,40 +1,115 @@
-body {
-    overflow: hidden;
-    background-color: black;
-  }
-  
+html,body {
+  background-color: black !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
 @font-face {
-    font-family: 'POM';
-    src: url(../fonts/POM.otf) format('opentype');
+  font-family: 'POM';
+  src: url(../fonts/POM.otf) format('opentype');
+}
+.navbar-links{
+display: flex;
+justify-content: center;
 }
 
 .nav-item{
-    font-size: 6rem;
-    color: white !important;
-    font-family: "POM";
-    text-decoration: none;
-  }
+  font-size: 6rem;
+  color: white !important;
+  font-family: "POM" !important;
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-.nav-item{
-    padding-left: 1rem;;
-    padding-right: 1rem;;
-  }
+ul.nav a:hover{
+  color: rgb(255, 0, 0) !important;
+  transition: all 300ms ease-in-out 200ms !important; 
+}
+/*hamburger menu for nav bar*/
+.toggle-button {
+/* to position menu on the top right but not in corner  */
+position: absolute;
+top: .75rem;
+right: 1rem;
+/* to not have it shown on normal size */
+display: none;
+/* setting the nav links when opened.  */
+flex-direction: column;
+justify-content: space-between;
+width: 3rem;
+height: 1.5rem;
+}
 
-  ul.nav a:hover { 
-    color: rgb(255, 0, 0) !important;
-    transition: all 300ms ease-in-out 200ms; 
-  }
+.toggle-button .bar{
+height: 5px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
 
 #friends {
-  margin-top: -0.01rem;
+margin-top: -0.01rem;
 }
 
 #about{
-  margin-left: 1rem;
+margin-left: 1rem;
 }
 
 
-  h1{ 
-    color: white;
-  }
+@media only screen and (max-width: 760px){
+/* display the hamburger when on mobile */
+.toggle-button{
+  display: flex;
+}
+/* hide the nav bar when on mobile */
+.navbar-links{
+  display: none;
+  width: 100%;
+}
+
+.navbar-links.active{
+  display: flex;
+}
+
+.heading.active{
+  margin-top: -2rem !important;
+}
+
+.navbar-links ul{
+  padding: 3rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  padding: .01rem .01rem;
+}
+
+#about{
+  margin-left: 0rem;
+}
+.heading{
+  margin-top: 2rem;
+  font-size: 2.5rem !important;
+}
+}
+@media only screen and (min-width: 760px) and (max-width: 1000px){
+.nav-item{
+  font-size: 4rem;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+.heading{
+  font-size: 5rem;
+}
+}
 
