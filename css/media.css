@@ -12,9 +12,13 @@ body::-webkit-scrollbar {
   font-family: 'POM';
   src: url(../fonts/POM.otf) format('opentype');
 }
+@font-face {
+  font-family: 'rizz';
+  src: url(../fonts/rizz.otf) format('opentype');
+}
 .heading{ 
     text-align: center;
-    font-family: 'Londrina Outline', cursive;
+    font-family: 'rizz';
     font-size: 8rem;
     color: white;
   }

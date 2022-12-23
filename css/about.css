@@ -96,10 +96,7 @@ margin-left: 1rem;
 #about{
   margin-left: 0rem;
 }
-.heading{
-  margin-top: 2rem;
-  font-size: 2.5rem !important;
-}
+
 }
 @media only screen and (min-width: 760px) and (max-width: 1000px){
 .nav-item{
@@ -116,15 +113,6 @@ margin-left: 1rem;
 main{
   padding: 0;
 }
-
-h1 {
-  font-size: 10rem;
-  color: white !important;
-  white-space: nowrap;
-  text-align: center;
-  text-decoration: underline;
-}
-
 
 .top{
   display: inline-block;
@@ -170,4 +158,72 @@ td{
 .cert{
   margin: 4rem;
   box-shadow:0 0 20px 20px white;
+}
+header{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header
+  {
+    font-size: 10rem;
+    color: white !important;
+    text-decoration: underline;
+    position: relative;
+    background-color: black;
+  }
+
+
+.header::after{
+  content: "  |";
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: black;
+  width: 100%;
+  animation: typing 2s steps(14) alternate infinite,
+             line 1s infinite;
+}
+
+@keyframes typing {
+  to{
+    width: 0%;
+  }
+}
+
+@keyframes line {
+  50%{
+    color: transparent;
+  }
+} 
+
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+  th, td {
+    display: block;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .header{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  .bio{
+    font-size: 1rem;
+  }
+  .circular-image {
+    width: 100%;
+}
+  .cert{
+    width: 100%;
+    margin: 0rem;
+    padding: 1rem;
+    box-shadow: none;
+  }
 }

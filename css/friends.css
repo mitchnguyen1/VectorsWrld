@@ -100,6 +100,11 @@ margin-left: 1rem;
   margin-top: 2rem;
   font-size: 2.5rem !important;
 }
+
+td {
+    display: inline-block;
+    align-items: center;
+  }
 }
 @media only screen and (min-width: 760px) and (max-width: 1000px){
 .nav-item{
@@ -112,4 +117,23 @@ margin-left: 1rem;
   font-size: 5rem;
 }
 }
+
+.title {
+  font-size: 4rem;
+  color: white;
+  font-family: 'POM';
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+td{
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+tr{
+  border: 0px solid transparent;
+}
+
 

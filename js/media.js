@@ -1,3 +1,4 @@
+//this will change the color of the heading on the media page
 var i = 0;
 function change() {
 var doc = document.getElementById("heading");
