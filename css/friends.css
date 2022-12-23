@@ -104,7 +104,9 @@ margin-left: 1rem;
 td {
     display: inline-block;
     align-items: center;
+    padding-left: 1.5rem !important;
   }
+
 }
 @media only screen and (min-width: 760px) and (max-width: 1000px){
 .nav-item{
@@ -126,9 +128,14 @@ td {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 761px){
+  td{
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
+
 td{
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
 }
