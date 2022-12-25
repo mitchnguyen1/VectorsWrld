@@ -124,15 +124,15 @@ main{
 
 .circular-image {
   border-radius: 40%;
-  width: 284px;
-  height: 407px;
+  width: 640px;
+  height: 640px;
   float: left;
 }
 
 .bio{
   text-align: center;
   position: relative;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .info{
@@ -144,15 +144,15 @@ table{
 }
 th{
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: white wavy underline;
   padding-right: 1rem;
 }
 
 td{
-  color: aqua;
+  color: rgb(86, 185, 251);
   font-size: 2rem;
-  text-decoration: underline;
+  text-decoration: underline wavy;
   padding-right: 2rem;
 }
 
@@ -169,7 +169,7 @@ header{
 }
 .header
   {
-    font-size: 10rem;
+    font-size: 8rem;
     color: white !important;
     text-decoration: underline;
     position: relative;
