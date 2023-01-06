@@ -8,6 +8,12 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+:root {
+  --shadow: #ff6a00;
+  --shadow2: rgb(255, 42, 42);
+  --shadow3: rgb(103, 246, 103);
+}
+
 @font-face {
   font-family: 'POM';
   src: url(../fonts/POM.otf) format('opentype');
@@ -24,6 +30,33 @@ justify-content: center;
   text-decoration: none;
   padding-left: 1rem;
   padding-right: 1rem;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 
+  6px 6px var(--shadow),
+  5.75px 5.75px var(--shadow),
+  5.5px 5.5px var(--shadow),
+  5.25px 5.25px var(--shadow),
+  5px 5px var(--shadow),
+  4.75px 4.75px var(--shadow),
+  4.5px 4.5px var(--shadow),
+  4.25px 4.25px var(--shadow),
+  4px 4px var(--shadow),
+  3.75px 3.75px var(--shadow),
+  3.5px 3.5px var(--shadow),
+  3.25px 3.25px var(--shadow),
+  3px 3px var(--shadow),
+  2.75px 2.75px var(--shadow),
+  2.5px 2.5px var(--shadow),
+  2.25px 2.25px var(--shadow),
+  2px 2px var(--shadow),
+  1.75px 1.75px var(--shadow),
+  1.5px 1.5px var(--shadow),
+  1.25px 1.25px var(--shadow),
+  1px 1px var(--shadow),
+  0.75px 0.75px var(--shadow),
+  0.5px 0.5px var(--shadow),
+  0.25px 0.25px var(--shadow);
 }
 
 ul.nav a:hover{
@@ -60,6 +93,14 @@ margin-top: -0.01rem;
 margin-left: 1rem;
 }
 
+#home{
+  margin-right: 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+#menu{
+  margin-left: 0.5rem;
+}
 
 @media only screen and (max-width: 760px){
 /* display the hamburger when on mobile */
@@ -88,7 +129,7 @@ margin-left: 1rem;
 
 .nav-item {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   width: 100%;
   padding: .01rem .01rem;
 }
@@ -96,7 +137,11 @@ margin-left: 1rem;
 #about{
   margin-left: 0rem;
 }
-
+#menu{
+  font-size: 3.7rem !important;
+  margin-right: 1rem;
+  margin-bottom: 1rem !important;
+}
 
 }
 @media only screen and (min-width: 760px) and (max-width: 1000px){
@@ -127,33 +172,83 @@ main{
   width: 640px;
   height: 640px;
   float: left;
+  border: #fbfbfb solid ;
 }
 
 .bio{
   text-align: center;
   position: relative;
   margin-top: 8rem;
+  font-family: 'Righteous', cursive;
 }
 
 .info{
   text-align: center;
+  font-family: 'Righteous', cursive;
 }
 table{
   margin: auto;
   
 }
+
 th{
-  color: white;
-  font-size: 2.5rem;
-  text-decoration: white wavy underline;
+  color: #fbfbfb;
+  font-size: 3.5rem;
+  text-decoration: #ffffff wavy underline;
   padding-right: 1rem;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 
+  6px 6px var(--shadow),
+  5.75px 5.75px var(--shadow),
+  5.5px 5.5px var(--shadow),
+  5.25px 5.25px var(--shadow),
+  5px 5px var(--shadow),
+  4.75px 4.75px var(--shadow),
+  4.5px 4.5px var(--shadow),
+  4.25px 4.25px var(--shadow),
+  4px 4px var(--shadow),
+  3.75px 3.75px var(--shadow),
+  3.5px 3.5px var(--shadow),
+  3.25px 3.25px var(--shadow),
+  3px 3px var(--shadow),
+  2.75px 2.75px var(--shadow),
+  2.5px 2.5px var(--shadow),
+  2.25px 2.25px var(--shadow),
+  2px 2px var(--shadow),
+  1.75px 1.75px var(--shadow),
+  1.5px 1.5px var(--shadow),
+  1.25px 1.25px var(--shadow),
+  1px 1px var(--shadow),
+  0.75px 0.75px var(--shadow),
+  0.5px 0.5px var(--shadow),
+  0.25px 0.25px var(--shadow);
 }
 
 td{
-  color: rgb(86, 185, 251);
-  font-size: 2rem;
-  text-decoration: underline wavy;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-decoration: white underline wavy;
   padding-right: 2rem;
+  font-weight: 500;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 
+  3.75px 3.75px var(--shadow2),
+  3.5px 3.5px var(--shadow2),
+  3.25px 3.25px var(--shadow2),
+  3px 3px var(--shadow2),
+  2.75px 2.75px var(--shadow2),
+  2.5px 2.5px var(--shadow2),
+  2.25px 2.25px var(--shadow2),
+  2px 2px var(--shadow2),
+  1.75px 1.75px var(--shadow2),
+  1.5px 1.5px var(--shadow2),
+  1.25px 1.25px var(--shadow2),
+  1px 1px var(--shadow2),
+  0.75px 0.75px var(--shadow2),
+  0.5px 0.5px var(--shadow2),
+  0.25px 0.25px var(--shadow2);
 }
 
 .cert{
@@ -171,9 +266,35 @@ header{
   {
     font-size: 8rem;
     color: white !important;
-    text-decoration: underline;
     position: relative;
     background-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 
+    6px 6px var(--shadow3),
+    5.75px 5.75px var(--shadow3),
+    5.5px 5.5px var(--shadow3),
+    5.25px 5.25px var(--shadow3),
+    5px 5px var(--shadow3),
+    4.75px 4.75px var(--shadow3),
+    4.5px 4.5px var(--shadow3),
+    4.25px 4.25px var(--shadow3),
+    4px 4px var(--shadow3),
+    3.75px 3.75px var(--shadow3),
+    3.5px 3.5px var(--shadow3),
+    3.25px 3.25px var(--shadow3),
+    3px 3px var(--shadow3),
+    2.75px 2.75px var(--shadow3),
+    2.5px 2.5px var(--shadow3),
+    2.25px 2.25px var(--shadow3),
+    2px 2px var(--shadow3),
+    1.75px 1.75px var(--shadow3),
+    1.5px 1.5px var(--shadow3),
+    1.25px 1.25px var(--shadow3),
+    1px 1px var(--shadow3),
+    0.75px 0.75px var(--shadow3),
+    0.5px 0.5px var(--shadow3),
+    0.25px 0.25px var(--shadow3);
   }
 
 
@@ -214,6 +335,7 @@ header{
   .header{
     font-size: 2.5rem;
     margin-top: 3rem;
+    white-space: nowrap;
   }
   .bio{
     font-size: 1.5rem;

@@ -8,6 +8,13 @@ body::-webkit-scrollbar {
   display: none !important;
 }
 
+:root{
+  --shadow: red;
+  --shadow2: rgb(255, 42, 244);
+}
+
+
+
 @font-face {
   font-family: 'POM';
   src: url(../fonts/POM.otf) format('opentype');
@@ -18,11 +25,88 @@ body::-webkit-scrollbar {
 }
 .heading{ 
     text-align: center;
-    font-family: 'rizz';
+    font-family: 'Bubblegum Sans', cursive;
     font-size: 8rem;
     color: white;
+    text-shadow: 
+      7px 7px var(--shadow),
+      6.75px 6.75px var(--shadow),
+      6.5px 6.5px var(--shadow),
+      6.25px 6.25px var(--shadow),
+      6px 6px var(--shadow),
+      5.75px 5.75px var(--shadow),
+      5.5px 5.5px var(--shadow),
+      5.25px 5.25px var(--shadow),
+      5px 5px var(--shadow),
+      4.75px 4.75px var(--shadow),
+      4.5px 4.5px var(--shadow),
+      4.25px 4.25px var(--shadow),
+      4px 4px var(--shadow),
+      3.75px 3.75px var(--shadow),
+      3.5px 3.5px var(--shadow),
+      3.25px 3.25px var(--shadow),
+      3px 3px var(--shadow),
+      2.75px 2.75px var(--shadow),
+      2.5px 2.5px var(--shadow),
+      2.25px 2.25px var(--shadow),
+      2px 2px var(--shadow),
+      1.75px 1.75px var(--shadow),
+      1.5px 1.5px var(--shadow),
+      1.25px 1.25px var(--shadow),
+      1px 1px var(--shadow),
+      0.75px 0.75px var(--shadow),
+      0.5px 0.5px var(--shadow),
+      0.25px 0.25px var(--shadow);
   }
 
+  .heading span {
+    position: relative;
+    color: #5362F6;
+    text-shadow: textShadow(0.25, 6, #E485F8);
+    animation: scatter 1.75s infinite;
+  }
+  
+  .heading span:nth-child(2n) {
+    color: #ED625C;
+    text-shadow: textShadow(0.25, 6, #F2A063);
+    animation-delay: 0.3s;
+  }
+  
+  .heading span:nth-child(3n) {
+    color: #FFD913;
+    text-shadow: textShadow(0.25, 6, #6EC0A9);
+    animation-delay: 0.15s;
+  }
+  
+  .heading span:nth-child(5n) {
+    color: #55ff88;
+    text-shadow: textShadow(0.25, 6, #E485F8);
+    animation-delay: 0.4s;
+  }
+  
+  .heading span:nth-child(7n), .playful span:nth-child(11n) {
+    color: #FF9C55;
+    text-shadow: textShadow(0.25, 6, #FF5555);
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes scatter {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .heading span {
+    animation: none;
+  }
+}
 
 .card{
   background-color: transparent !important;
@@ -45,6 +129,33 @@ body::-webkit-scrollbar {
     text-decoration: none;
     padding-left: 1rem;
     padding-right: 1rem;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 
+    6px 6px var(--shadow2),
+    5.75px 5.75px var(--shadow2),
+    5.5px 5.5px var(--shadow2),
+    5.25px 5.25px var(--shadow2),
+    5px 5px var(--shadow2),
+    4.75px 4.75px var(--shadow2),
+    4.5px 4.5px var(--shadow2),
+    4.25px 4.25px var(--shadow2),
+    4px 4px var(--shadow2),
+    3.75px 3.75px var(--shadow2),
+    3.5px 3.5px var(--shadow2),
+    3.25px 3.25px var(--shadow2),
+    3px 3px var(--shadow2),
+    2.75px 2.75px var(--shadow2),
+    2.5px 2.5px var(--shadow2),
+    2.25px 2.25px var(--shadow2),
+    2px 2px var(--shadow2),
+    1.75px 1.75px var(--shadow2),
+    1.5px 1.5px var(--shadow2),
+    1.25px 1.25px var(--shadow2),
+    1px 1px var(--shadow2),
+    0.75px 0.75px var(--shadow2),
+    0.5px 0.5px var(--shadow2),
+    0.25px 0.25px var(--shadow2);
   }
 
   ul.nav a:hover{
@@ -81,6 +192,13 @@ body::-webkit-scrollbar {
   margin-left: 1rem;
 }
 
+#home{
+  margin-right: 0.5rem !important;
+}
+
+#menu{
+  margin-left: 0.5rem;
+}
 
 @media only screen and (max-width: 760px){
   /* display the hamburger when on mobile */
@@ -109,11 +227,15 @@ body::-webkit-scrollbar {
 
   .nav-item {
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     width: 100%;
     padding: .01rem .01rem;
   }
-
+  #menu{
+    font-size: 3.7rem;
+    margin-right: 1rem;
+    margin-top: -3rem !important;
+  }
   #about{
     margin-left: 0rem;
   }
