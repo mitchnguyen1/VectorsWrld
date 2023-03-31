@@ -7,21 +7,33 @@ i = (i + 1) % colorPicker.length;
 }
 setInterval(change, 350);
 
-  // get all video elements on the page
-  var videos = document.getElementsByTagName('video');
 
-  // set the first video to play automatically
-  videos[0].autoplay = true;
+ // get all video elements on the page
+ var videos = document.getElementsByTagName('video');
+ var currentVideoIndex = 0;
 
-  // add event listeners to each video
-  for (var j = 0; j < videos.length; j++) {
-    videos[j].addEventListener('ended', function() {
-    console.log('test');
-      // when the current video ends, load the next video
-      var nextVideoIndex = parseInt(this.id.substring(5)) + 1;
-      if (nextVideoIndex < videos.length) {
-        videos[nextVideoIndex].load();
-        videos[nextVideoIndex].autoplay = true;
-      }
-    });
-  }
+ function loadNextVideo() {
+   // increment the current video index
+   currentVideoIndex++;
+
+   // check if there are any videos left to load
+   if (currentVideoIndex < videos.length) {
+     // load the next video
+     videos[currentVideoIndex].load();
+     console.group("1");
+   }
+ }
+
+ // add event listeners to each video
+ for (var j = 0; j < videos.length; j++) {
+   videos[j].addEventListener('canplaythrough', function() {
+     if (currentVideoIndex < videos.length - 1) {
+       // if this isn't the last video, load the next one
+       loadNextVideo();
+       console.group("test");
+     }
+   });
+ }
+
+ // load the first video
+ videos[0].load();
