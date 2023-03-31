@@ -1,0 +1,99 @@
+html {
+    background-color: black !important;
+    overflow: hidden;
+  }
+  
+@font-face {
+    font-family: 'PASTOROF';
+    src: url(../fonts/Pastor\ of\ Muppets.TTF) format('truetype');
+}
+
+@font-face {
+    font-family: 'reverse6';
+    src: url(../fonts/reverse6.otf) format('opentype');
+}
+
+.bg-image {
+    background-color: black !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    flex-direction: column;
+  }
+
+
+p {
+    color: white;
+    font-size: 10vw;
+    font-family: 'reverse6';
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+.reggie {
+    font-family: 'PASTOROF' !important;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50%;
+}
+
+.container a {
+        color: #FFFFFF;
+        text-decoration: none;
+}
+
+.container a:hover {
+    color: red;
+    transition: all 750ms ease-in-out 250ms;
+  }
+
+.about {
+    margin-bottom: 5%;
+    margin-left: 15%; 
+    margin-right: 10%;
+}
+
+.adjust {
+    margin-left: 10%; 
+    margin-right: 10%;
+}
+
+
+@media only screen and (max-width: 480px) { /* for phones */
+   .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 650px;
+    align-items: center;
+   }
+
+   p {
+    font-size: 18vw;
+   }
+}
+
+@media only screen and (max-width: 1324px) and (min-width: 768px) { /*for ipads landscape*/
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60% !important;
+    }
+    .about {
+        margin-bottom: 3.5%;
+        margin-left: 20%;
+    }
+    .friends {
+        margin-left: 5%; 
+        margin-right: 20%;
+    }
+    .media {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+} 

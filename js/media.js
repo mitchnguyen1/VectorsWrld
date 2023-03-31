@@ -7,3 +7,21 @@ i = (i + 1) % colorPicker.length;
 }
 setInterval(change, 350);
 
+  // get all video elements on the page
+  var videos = document.getElementsByTagName('video');
+
+  // set the first video to play automatically
+  videos[0].autoplay = true;
+
+  // add event listeners to each video
+  for (var j = 0; j < videos.length; j++) {
+    videos[j].addEventListener('ended', function() {
+    console.log('test');
+      // when the current video ends, load the next video
+      var nextVideoIndex = parseInt(this.id.substring(5)) + 1;
+      if (nextVideoIndex < videos.length) {
+        videos[nextVideoIndex].load();
+        videos[nextVideoIndex].autoplay = true;
+      }
+    });
+  }
